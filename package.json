@@ -1,0 +1,19 @@
+{
+  "name": "codespark",
+  "version": "1.0.0",
+  "description": "捡起很多小代码，堆成一座大前端  -- 捡代码的小女孩",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanganni1014/codeSpark.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wanganni1014/codeSpark/issues"
+  },
+  "homepage": "https://github.com/wanganni1014/codeSpark#readme"
+}
