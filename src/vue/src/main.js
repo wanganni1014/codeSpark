@@ -25,3 +25,26 @@ createApp(App).mount('#app');
 //     store,
 //     render: h => h(App)
 // })
+
+// vue3 vs vue2 自定义指令生命周期
+// 和普通的component的生命周期匹配
+
+// // vue2
+// const MyCustomDirective = {
+//     bind(el, binding, vnode, prevVnode) {},
+//     inserted() {},
+//     update() {},
+//     componentUpdated() {},
+//     unbind() {}
+// }
+
+// // vue3
+// const MyCustomDirective = {
+//     beforeMount(el, binding, vnode, prevVnode) {},
+//     mounted() {},
+//     beforeUpdate() {},
+//     updated() {},
+//     beforeUnmount() {},
+//     unmounted() {}
+// }
+
