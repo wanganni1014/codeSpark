@@ -1,13 +1,11 @@
 import React from 'react';
-import { Route, Switch, Router } from 'react-router-dom';
-import './App.css';
-// import Index from '';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Index from './Index/Index';
 
 function App() {
   return (
     <Router>
-      {/* <Route path='path' component={component}/> */}
+      <Route path='/' component={Index}/>
     </Router>  
   );
 }
