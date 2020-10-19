@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/wanganni1014/codeSpark/issues"
   },
-  "homepage": "https://github.com/wanganni1014/codeSpark#readme"
+  "homepage": "https://github.com/wanganni1014/codeSpark#readme",
+  "dependencies": {}
 }
