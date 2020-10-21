@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变化莫测的this</title>
+</head>
+<style>
+    .anqila,
+    .laoyase {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        left: 0;
+        transition: all 1s;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <div class="anqila"></div>
+    <div class="laoyase"></div>
+</body>
+
+<script>
+    'use strict';
+    let anqila = document.querySelector('.anqila');
+    let laoyase = document.querySelector('.laoyase');
+
+    anqila.onclick = move;
+    laoyase.onclick = move;
+
+    // !!!事件调用环境: 谁触发,函数中this就指向谁
+    function move() {
+        console.log(this); // result: <div class="anqila"></div>
+        this.style.left = '500px';
+    }
+
+    // 全局环境
+    // 浏览器 全局环境中,this指向Window
+    // node 全局环境中, this执向导出的对象,module.exports
+    console.log(this);
+
+
+    // !!!函数内部
+    // this最终指向的是调用他的对象
+
+    // 普通函数直接调用
+    // 事件自己调用,指向window (非严格模式下)
+    // 事件自己调用,指向undefined (严格模式下)
+    function jump() {
+        console.log(this); // result: Window
+    }
+
+    jump();
+    // 严格模式下
+    // 函数和变量(用var声明的变量, let和const不行)都是存在Window对象中的,依然遵循谁调用,指向谁
+    // window.jump(); // result: Window
+
+    // 对象中的函数直接调用
+    var obj = {
+        a: 1,
+        b: function() {
+            console.log(this); // 指向 obj 这个对象
+            console.log(this.a); // result: 1
+            return this.a;
+        }
+    }
+
+
+    //  上面声明改成let ,window中就找不到obj了.let 不存在window对象上
+
+    // obj.b();
+    // 与上面的一致
+    // 原因: 函数被多层对象包含的时候, 如果函数被最外层对象调用,this的指向也只是它的上一级
+    // window.obj.b();
+    // 函数中的this,在函数创建时没有任何意义,只有在调用时才具有意义
+    // 如果函数被复制给另外一个对象
+    var c = obj.b;
+    // c(); // 此时this指向window.  相当于window.c()
+
+    // 箭头函数
+
+    // 箭头函数本身是没有this和arguments的,在箭头函数中引用this实际上调用的是定义时的上一层作用域的this.
+    var obj = {
+        fn: () => {
+            console.log(this);
+        }
+    }
+
+    // obj.fn();
+    // window.obj.fn();
+    // var c = obj.fn
+    // c();
+</script>
+
+</html>
