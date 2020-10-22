@@ -39,7 +39,6 @@ export default class App extends Component {
 
     deleteList = () => {
         const { arr } = this.state;
-        // let arr = this.state.arr;
         arr.splice(0, 1);
         this.setState({
             arr: arr
