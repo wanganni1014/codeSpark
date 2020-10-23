@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数的节流与防抖</title>
+</head>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: plum;
+    }
+</style>
+
+<body>
+    <div class="box"></div>
+    <script src="index.js"></script>
+    <script>
+        let box = document.querySelector('.box');
+        // box.onmousemove = throttle(move, 200);
+        // box.onmousemove = throttle1(move, 200);
+        // box.onmousemove = debounce(move, 200);
+        box.onmousemove = debounce1(move, 200);
+
+        function move(event) {
+            console.log(event)
+            this.innerHTML = event.clientX;
+        }
+    </script>
+</body>
+
+</html>
