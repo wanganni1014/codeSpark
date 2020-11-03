@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFC的作用</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* ------------- */
+    /* p {
+        color: palegreen;
+        background-color: palevioletred;
+        text-align: center;
+        width: 200px;
+        line-height: 300px;
+        margin: 30px;
+    }
+    
+    div {
+        overflow: hidden;
+    } */
+    /* -------------------- */
+    /* div {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    body {
+        width: 100%;
+        position: relative;
+    }
+    
+    .left {
+        width: 150px;
+        line-height: 200px;
+        background-color: palevioletred;
+        float: left;
+    }
+    
+    .right {
+        overflow: hidden;
+        height: 300px;
+        line-height: 300px;
+        background-color: powderblue;
+    } */
+    /* ------------------ */
+    
+    .parent {
+        border: 5px solid palegoldenrod;
+        width: 300px;
+        overflow: hidden;
+    }
+    
+    .child {
+        border: 5px solid palegreen;
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+</style>
+
+<body>
+
+    <!-- 作用一: 避免margin重叠 -->
+    <!-- <p>我是p标签</p>
+    <div>
+        <p>我是p标签</p>
+    </div> -->
+
+
+    <!-- 作用二: 自适应左右布局 -->
+    <!-- <div class="left">LEFT</div>
+    <div class="right">RIGHT</div> -->
+
+
+    <!-- 作用三: 清除浮动 -->
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
