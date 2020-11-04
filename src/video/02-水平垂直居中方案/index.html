@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水平垂直居中解决方案</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .container {
+        width: 200px;
+        height: 200px;
+        color: palevioletred;
+        background-color: palegreen;
+        /* 文本水平居中 */
+        text-align: center;
+        /* 文本垂直居中 */
+        /* line-height: 200px; */
+        /* 消除幽灵空白节点的影响 */
+        /* 图片居中 */
+        /* font-size: 0;
+        display: table-cell;
+        vertical-align: middle; */
+    }
+    /* 将图片放在div容器中,这样设置也可以居中 */
+    
+    .container div {
+        font-size: 0;
+        line-height: 200px;
+    }
+    
+    .container img {
+        vertical-align: middle;
+    }
+    
+    .child {
+        background-color: palevioletred;
+    }
+    
+    .parent-1 {
+        width: 300px;
+        height: 300px;
+        background-color: papayawhip;
+        position: relative;
+    }
+    
+    .parent-1 .child {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        display: inline-block;
+    }
+    
+    .parent-2 {
+        width: 300px;
+        height: 300px;
+        background-color: powderblue;
+        /* 方式一: table布局 */
+        /* display: table-cell;
+        text-align: center;
+        vertical-align: middle; */
+        /* 方式二: flex布局 */
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        /* 方式三: 绝对定位 */
+        position: relative;
+    }
+    
+    .parent-2 .child {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<body>
+    <!-- 情况一:文本图片 -->
+    <div class="container">
+        <!-- 我是文本 -->
+        <div>
+            <img src="./pic.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- 情况二: 知道子元素的宽高 -->
+    <div class="parent-1">
+        <div class="child"></div>
+    </div>
+
+    <!-- 情况三:子元素不知宽高 -->
+    <div class="parent-2">
+        <div class="child">
+            <div>不知道宽高的子元素哎呦喂</div>
+        </div>
+    </div>
+</body>
+
+</html>
