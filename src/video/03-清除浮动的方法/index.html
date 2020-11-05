@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .article {
+        /* 方法三: 给浮动的元素的父元素添加浮动 */
+        /* 整体浮动,影响布局,不推荐使用 */
+        /* float: left; */
+        background-color: #999;
+        /* width: 300px; */
+        color: white;
+        border: 1px solid palevioletred;
+        /* 方法一: 创建BFC*/
+        /* overflow: hidden;
+        *zoom: 1; */
+    }
+    
+    .article img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        float: left;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    /* 方法四: 使用::after伪元素 */
+    
+    .clearfix {
+        *zoom: 1;
+    }
+    
+    .clearfix:after {
+        content: "020";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+</style>
+
+<body>
+    <div class="article clearfix">
+        <img src="./tree.jpeg">
+        <p>不如点波小心心❤吧</p>
+        <!-- 方法二: 在父元素中追加一个空的子元素,设置clear:both -->
+        <!-- 优点：简单，代码少，浏览器兼容性好。
+            缺点：需要添加大量无语义的html元素，代码不够优雅，后期不容易维护。 -->
+        <!-- <div class="clear"></div> -->
+    </div>
+</body>
+
+</html>
