@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS hover-异形效果</title>
+</head>
+<style>
+    #btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    button {
+        border: none;
+        border-radius: 10px;
+        background: plum;
+        text-transform: uppercase;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 30px;
+        outline: none;
+        transition: border-radius 0.3s;
+    }
+    
+    button:hover {
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+</style>
+
+<body>
+
+    <div id="btn">
+        <button>Hover me</button>
+    </div>
+</body>
+
+</html>
