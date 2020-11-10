@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单侧投影</title>
+</head>
+<style>
+    div {
+        margin: 30px;
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+        line-height: 100px;
+        text-align: center;
+        border: 1px solid #333333;
+    }
+    
+    .left {
+        /* X偏移值,y偏移值,模糊半径,扩张半径,颜色 */
+        box-shadow: -7px 0 5px -5px #333333;
+    }
+    
+    .right {
+        box-shadow: 7px 0 5px -5px #333333;
+    }
+    
+    .top {
+        box-shadow: 0 -7px 5px -5px #333333;
+    }
+    
+    .bottom {
+        box-shadow: 0 7px 5px -5px #333333;
+    }
+</style>
+
+<body>
+    <div class="left">左</div>
+    <div class="right">右</div>
+    <div class="top">上</div>
+    <div class="bottom">下</div>
+</body>
+
+</html>
