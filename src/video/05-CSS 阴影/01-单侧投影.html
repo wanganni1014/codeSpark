@@ -14,24 +14,30 @@
         font-size: 16px;
         line-height: 100px;
         text-align: center;
-        border: 1px solid #333333;
+        border: 1px solid #333;
     }
     
     .left {
-        /* X偏移值,y偏移值,模糊半径,扩张半径,颜色 */
-        box-shadow: -7px 0 5px -5px #333333;
+        /* 参数按顺序分别代表:
+            x偏移值,
+            y偏移值,
+            模糊半径,
+            扩展半径,
+            颜色: 颜色不写,默认为黑色
+         */
+        box-shadow: -7px 0 5px -5px #333;
     }
     
     .right {
-        box-shadow: 7px 0 5px -5px #333333;
+        box-shadow: 7px 0 5px -5px #333;
     }
     
     .top {
-        box-shadow: 0 -7px 5px -5px #333333;
+        box-shadow: 0 -7px 5px -5px;
     }
     
     .bottom {
-        box-shadow: 0 7px 5px -5px #333333;
+        box-shadow: 0 7px 5px -5px;
     }
 </style>
 
