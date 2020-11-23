@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实现图片眩晕效果</title>
+</head>
+<style>
+    body {
+        background-color: white;
+    }
+    
+    .pic {
+        margin: 30px auto 0;
+        width: 400px;
+        height: 400px;
+        background: url('./bg.jpg'), cyan;
+        background-size: center;
+        background-blend-mode: lighten;
+    }
+    
+    .pic::after {
+        content: '';
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: url('./bg.jpg'), red;
+        background-blend-mode: lighten;
+        margin-left: 10px;
+        background-size: center;
+        mix-blend-mode: darken;
+    }
+</style>
+
+<body>
+    <div class="pic"></div>
+</body>
+
+</html>
