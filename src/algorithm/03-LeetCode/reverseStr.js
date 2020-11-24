@@ -14,3 +14,21 @@ module.exports.reverseWords = (str) => {
         return item.split('').reverse().join('')
     }).join(' ')
 };
+
+
+// 优化点:
+// split(' ') 可以使用正则匹配去分隔  -> split(/\s/g)
+// match方法 从左至右一个一个识别 -> match(/[\w']+/g)
+
+/**
+ * 知识点:
+ * String.prototype.split
+ * String.prototype.match
+ * Array.prototype.map
+ * Array.prototype.reverse
+ * Array.prototype.join
+ */
+
+ /**
+  * 思维方法--掌握所有api,知道在某些场景的实际应用
+  */
