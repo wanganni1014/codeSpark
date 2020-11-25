@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IE LOGO</title>
+    <title>波浪效果动画</title>
 </head>
 <style>
     body {
         position: relative;
-        align-items: center;
         min-height: 100vh;
         background-color: skyblue;
         overflow: hidden;
+        align-items: center;
     }
     
     body:before,
     body:after {
-        content: "";
+        content: '';
         position: absolute;
-        left: 50%;
+        background-color: #ffffff;
         min-width: 300vw;
         min-height: 300vw;
-        background-color: #fff;
-        animation: rotate infinite linear;
+        left: 50%;
+        animation: rorate infinite linear;
     }
     
     body:before {
@@ -34,32 +34,32 @@
     
     body:after {
         bottom: 12vh;
-        opacity: .5;
         border-radius: 47%;
+        opacity: 0.5;
         animation-duration: 10s;
     }
     
-    @keyframes rotate {
+    @keyframes rorate {
         0% {
-            transform: translate(-50%, 0) rotateZ(0deg);
+            transform: translate(-50%, 0) rotate(0deg);
         }
         50% {
-            transform: translate(-50%, -2%) rotateZ(180deg);
+            transform: translate(-50%, -2%) rotate(180deg);
         }
         100% {
-            transform: translate(-50%, 0%) rotateZ(360deg);
+            transform: translate(-50%, 0) rotate(360deg);
         }
     }
     
     h2 {
         position: relative;
         color: #333;
-        z-index: 10;
-        text-align: center;
-        height: 100vh;
         line-height: 140vh;
+        height: 100vh;
+        text-align: center;
         font-size: 8vw;
-        text-shadow: 3px 3px 2px #999;
+        text-shadow: 3px 3px 2px #999999;
+        z-index: 10;
     }
 </style>
 
