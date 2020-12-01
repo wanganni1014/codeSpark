@@ -4,67 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IE LOGO</title>
+    <title>充电效果</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
-<style>
-    body {
-        position: relative;
-        align-items: center;
-        min-height: 100vh;
-        background-color: skyblue;
-        overflow: hidden;
-    }
-    
-    body:before,
-    body:after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        min-width: 300vw;
-        min-height: 300vw;
-        background-color: #fff;
-        animation: rotate infinite linear;
-    }
-    
-    body:before {
-        bottom: 15vh;
-        border-radius: 45%;
-        animation-duration: 10s;
-    }
-    
-    body:after {
-        bottom: 12vh;
-        opacity: .5;
-        border-radius: 47%;
-        animation-duration: 10s;
-    }
-    
-    @keyframes rotate {
-        0% {
-            transform: translate(-50%, 0) rotateZ(0deg);
-        }
-        50% {
-            transform: translate(-50%, -2%) rotateZ(180deg);
-        }
-        100% {
-            transform: translate(-50%, 0%) rotateZ(360deg);
-        }
-    }
-    
-    h2 {
-        position: relative;
-        color: #333;
-        z-index: 10;
-        text-align: center;
-        height: 100vh;
-        line-height: 140vh;
-        font-size: 8vw;
-        text-shadow: 3px 3px 2px #999;
-    }
-</style>
 
 <body>
-    <h2>~小~波~浪~</h2>
+    <div class="container">
+        <div class="header"></div>
+        <div class="battery"></div>
+        <div class="battery-copy">
+            <div class="g-wave"></div>
+            <div class="g-wave"></div>
+            <div class="g-wave"></div>
+        </div>
+    </div>
 </body>
 
 </html>
