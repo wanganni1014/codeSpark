@@ -5,19 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>充电效果</title>
-    <link rel="stylesheet" href="./index.css">
 </head>
+<style>
+    body {
+        background: black;
+        color: #fff;
+    }
+    
+    h1 {
+        font-weight: bold;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        border-right: 2px solid;
+        /*  ch是一个相对于数字0的大小。1ch 就是数字 0 的宽度。  */
+        width: 26ch;
+        margin: 2em 1em;
+        white-space: nowrap;
+        overflow: hidden;
+        /* steps 阶梯函数 */
+        /* steps(26, end) 表示将动画的总时长按照26阶梯等距划分,并设置第二步为第一帧的开始,再以第一步作为最后一帧结束 */
+        animation: typing 10s steps(26, end), infinite alternate;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+</style>
 
 <body>
-    <div class="container">
-        <div class="header"></div>
-        <div class="battery"></div>
-        <div class="battery-copy">
-            <div class="g-wave"></div>
-            <div class="g-wave"></div>
-            <div class="g-wave"></div>
-        </div>
-    </div>
+    <h1>Pure CSS Typing animation.</h1>
 </body>
 
 </html>
