@@ -1,30 +1,24 @@
-body,
-html {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body {
+  background-color: black;
   -webkit-filter: blur(4px) contrast(8);
           filter: blur(4px) contrast(8);
-  background: #000;
 }
 
 .container {
-  margin: auto;
+  margin: 300px auto;
   position: relative;
   width: 30px;
   height: 30px;
 }
 
 .ball,
-.first {
+.center {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
+  top: 0;
   bottom: 0;
-  background: #fff;
+  background-color: white;
   border-radius: 50%;
   -webkit-transform: translate(-700%, 0);
           transform: translate(-700%, 0);
@@ -66,16 +60,6 @@ html {
           animation: move 3.5s infinite 1.3s linear;
 }
 
-.ball:nth-child(7) {
-  -webkit-animation: move 3.5s infinite 1.5s linear;
-          animation: move 3.5s infinite 1.5s linear;
-}
-
-.first {
-  -webkit-animation: scaleMove 3.5s infinite linear;
-          animation: scaleMove 3.5s infinite linear;
-}
-
 @-webkit-keyframes move {
   25% {
     opacity: 1;
@@ -114,21 +98,26 @@ html {
   }
 }
 
+.center {
+  -webkit-animation: scaleMove 3.5s infinite linear;
+          animation: scaleMove 3.5s infinite linear;
+}
+
 @-webkit-keyframes scaleMove {
   25% {
-    opacity: 1;
     -webkit-transform: translate(-1vw, 0);
             transform: translate(-1vw, 0);
+    opacity: 1;
   }
   35% {
-    opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
+    opacity: 1;
   }
   70% {
-    opacity: 1;
     -webkit-transform: translate(1vw, 0) scale(2);
             transform: translate(1vw, 0) scale(2);
+    opacity: 1;
   }
   90%,
   100% {
@@ -140,19 +129,19 @@ html {
 
 @keyframes scaleMove {
   25% {
-    opacity: 1;
     -webkit-transform: translate(-1vw, 0);
             transform: translate(-1vw, 0);
+    opacity: 1;
   }
   35% {
-    opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
+    opacity: 1;
   }
   70% {
-    opacity: 1;
     -webkit-transform: translate(1vw, 0) scale(2);
             transform: translate(1vw, 0) scale(2);
+    opacity: 1;
   }
   90%,
   100% {

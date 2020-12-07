@@ -1,43 +1,42 @@
-$count: 7;
-body,
-html {
-    width: 100%;
-    height: 100%;
-    display: flex;
+// 1.定义body样式
+body {
+    background-color: black;
+    // 给body加上滤镜,打造融合效果
     filter: blur(4px) contrast(8);
-    background: #000;
 }
 
+// 2.画出中心球和七个小球
 .container {
-    margin: auto;
+    margin: 300px auto;
     position: relative;
     width: 30px;
     height: 30px;
 }
 
 .ball,
-.first {
+.center {
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
+    top: 0;
     bottom: 0;
-    background: #fff;
+    background-color: white;
     border-radius: 50%;
     transform: translate(-700%, 0);
     opacity: 0;
 }
 
-@for $i from 0 through $count {
+// 3.设置小球移动动画
+$count: 7;
+// 现在是7个一起动,我们的目的是7个球错落有致的移动
+@for $i from 0 to $count {
     .ball:nth-child(#{$i}) {
+        // 还要加上时间差
         animation: move 3.5s infinite #{$i * 0.2 + 0.1}s linear;
     }
 }
 
-.first {
-    animation: scaleMove 3.5s infinite linear;
-}
-
+// 设置透明度
 @keyframes move {
     25% {
         opacity: 1;
@@ -54,18 +53,23 @@ html {
     }
 }
 
+// 4.设置中心球scale效果动画
+.center {
+    animation: scaleMove 3.5s infinite linear;
+}
+
 @keyframes scaleMove {
     25% {
-        opacity: 1;
         transform: translate(-1vw, 0);
+        opacity: 1;
     }
     35% {
-        opacity: 1;
         transform: scale(1);
+        opacity: 1;
     }
     70% {
-        opacity: 1;
         transform: translate(1vw, 0) scale(2);
+        opacity: 1;
     }
     90%,
     100% {
