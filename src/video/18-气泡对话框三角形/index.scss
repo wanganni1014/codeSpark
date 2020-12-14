@@ -1,0 +1,84 @@
+.box {
+    overflow: hidden;
+    div {
+        float: left;
+        margin: 60px 20px;
+    }
+    .box1 {
+        width: 30px;
+        height: 30px;
+        // background-color: black;
+        border: 15px solid pink;
+    }
+    .box2 {
+        width: 30px;
+        height: 30px;
+        // background-color: black;
+        border: 15px solid;
+        border-color: palegoldenrod pink paleturquoise peru;
+    }
+    .box3 {
+        width: 0;
+        height: 0;
+        border: 15px solid;
+        border-color: palegoldenrod pink paleturquoise peru;
+    }
+    .box4 {
+        width: 0;
+        height: 0;
+        border: 15px solid;
+        border-color: transparent red transparent transparent;
+    }
+}
+
+.pop {
+    margin: 30px;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    background-color: #dddddd;
+    border-radius: 8px;
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border: 12px solid;
+        border-color: transparent #dddddd transparent transparent;
+        position: absolute;
+        top: 46px;
+        left: -24px;
+    }
+}
+
+.pop-with-border {
+    margin: 30px;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 5px #eee);
+}
+
+.pop-with-border::after,
+.pop-with-border::before {
+    content: '';
+    border-top: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: -16px;
+    z-index: 999;
+    left: 16px;
+    overflow: hidden;
+}
+
+.pop-with-border::before {
+    top: -17px;
+    border-bottom-color: #dddddd;
+}

@@ -2,34 +2,32 @@
   overflow: hidden;
 }
 
-.box > div {
+.box div {
   float: left;
-  margin: 20px;
+  margin: 60px 20px;
 }
 
-.box1 {
+.box .box1 {
   width: 30px;
   height: 30px;
   border: 15px solid pink;
-  left: 140px;
-  bottom: 150px;
 }
 
-.box2 {
+.box .box2 {
   width: 30px;
   height: 30px;
   border: 15px solid;
   border-color: palegoldenrod pink paleturquoise peru;
 }
 
-.box3 {
+.box .box3 {
   width: 0;
   height: 0;
   border: 15px solid;
   border-color: palegoldenrod pink paleturquoise peru;
 }
 
-.box4 {
+.box .box4 {
   width: 0;
   height: 0;
   border: 15px solid;
@@ -38,12 +36,12 @@
 
 .pop {
   margin: 30px;
+  position: relative;
   width: 200px;
   height: 100px;
   padding: 10px;
-  background: #ddd;
+  background-color: #dddddd;
   border-radius: 8px;
-  position: relative;
 }
 
 .pop::after {
@@ -51,14 +49,10 @@
   width: 0;
   height: 0;
   border: 12px solid;
-  border-color: transparent #ddd transparent transparent;
+  border-color: transparent #dddddd transparent transparent;
   position: absolute;
-  top: 45px;
+  top: 46px;
   left: -24px;
-}
-
-.pop p {
-  padding: 10px 20px;
 }
 
 .pop-with-border {
@@ -66,37 +60,31 @@
   width: 200px;
   height: 100px;
   padding: 10px;
-  background: #fff;
+  background-color: #fff;
+  border: 1px solid #dddddd;
   border-radius: 8px;
-  position: relative;
-  border: 1px solid #ddd;
   -webkit-filter: drop-shadow(0 0 5px #eee);
           filter: drop-shadow(0 0 5px #eee);
 }
 
-.pop-with-border:before,
-.pop-with-border:after {
-  top: -8px;
-  border: 8px solid transparent;
+.pop-with-border::after,
+.pop-with-border::before {
+  content: '';
   border-top: 0;
-  border-bottom-color: #fff;
-  content: "";
-  display: block;
   width: 0;
   height: 0;
+  display: block;
+  border: 8px solid transparent;
+  border-bottom-color: #fff;
+  position: absolute;
+  top: -16px;
+  z-index: 999;
   left: 16px;
   overflow: hidden;
-  position: absolute;
-  z-index: 101;
 }
 
-.pop-with-border:before {
-  top: -9px;
-  border-bottom-color: #ddd;
-  z-index: 99;
-}
-
-.pop-with-border p {
-  padding: 10px 20px;
+.pop-with-border::before {
+  top: -17px;
+  border-bottom-color: #dddddd;
 }
 /*# sourceMappingURL=index.css.map */
