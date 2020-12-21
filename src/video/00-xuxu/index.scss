@@ -1,0 +1,40 @@
+div {
+    margin: 100px auto;
+    position: relative;
+    width: 500px;
+    height: 313px;
+    background: url(http://up.enterdesk.com/edpic_source/21/00/00/210000f8e772d7fc0758e67ae4b48807.jpg) no-repeat;
+    background-size: cover;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=) no-repeat;
+        background-size: cover;
+        z-index: 1;
+        animation: maskRotate 4s ease-in-out infinite;
+    }
+}
+
+// $count: 100;
+// @keyframes maskRotate {
+//     @for $i from 0 through $count {
+//         #{$i / $count * 100}% {
+//             mask-image: linear-gradient($i / $count * 360deg, rgba(0, 0, 0, 1) 40%, transparent 60%);
+//         }
+//     }
+// }
+// CSS 属性 mask 允许使用者通过遮罩或者裁切特定区域的图片的方式来隐藏一个元素的部分或者全部可见区域。
+@keyframes maskRotate {
+    @for $i from 0 through 50 {
+        #{$i}% {
+            mask: linear-gradient(45deg, #000 #{$i * 2 + '%'}, transparent #{$i * 2.5 + '%'}, transparent #{$i * 2.5 + '%'});
+        }
+    }
+    100% {
+        mask: linear-gradient(45deg, #000， #000 100%);
+    }
+}

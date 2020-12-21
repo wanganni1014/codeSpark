@@ -1,0 +1,446 @@
+@charset "UTF-8";
+div {
+  margin: 100px auto;
+  position: relative;
+  width: 500px;
+  height: 313px;
+  background: url(http://up.enterdesk.com/edpic_source/21/00/00/210000f8e772d7fc0758e67ae4b48807.jpg) no-repeat;
+  background-size: cover;
+}
+
+div::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=) no-repeat;
+  background-size: cover;
+  z-index: 1;
+  -webkit-animation: maskRotate 4s ease-in-out infinite;
+          animation: maskRotate 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes maskRotate {
+  0% {
+    -webkit-mask: linear-gradient(45deg, #000 0%, transparent 0%, transparent 0%);
+            mask: linear-gradient(45deg, #000 0%, transparent 0%, transparent 0%);
+  }
+  1% {
+    -webkit-mask: linear-gradient(45deg, #000 2%, transparent 2.5%, transparent 2.5%);
+            mask: linear-gradient(45deg, #000 2%, transparent 2.5%, transparent 2.5%);
+  }
+  2% {
+    -webkit-mask: linear-gradient(45deg, #000 4%, transparent 5%, transparent 5%);
+            mask: linear-gradient(45deg, #000 4%, transparent 5%, transparent 5%);
+  }
+  3% {
+    -webkit-mask: linear-gradient(45deg, #000 6%, transparent 7.5%, transparent 7.5%);
+            mask: linear-gradient(45deg, #000 6%, transparent 7.5%, transparent 7.5%);
+  }
+  4% {
+    -webkit-mask: linear-gradient(45deg, #000 8%, transparent 10%, transparent 10%);
+            mask: linear-gradient(45deg, #000 8%, transparent 10%, transparent 10%);
+  }
+  5% {
+    -webkit-mask: linear-gradient(45deg, #000 10%, transparent 12.5%, transparent 12.5%);
+            mask: linear-gradient(45deg, #000 10%, transparent 12.5%, transparent 12.5%);
+  }
+  6% {
+    -webkit-mask: linear-gradient(45deg, #000 12%, transparent 15%, transparent 15%);
+            mask: linear-gradient(45deg, #000 12%, transparent 15%, transparent 15%);
+  }
+  7% {
+    -webkit-mask: linear-gradient(45deg, #000 14%, transparent 17.5%, transparent 17.5%);
+            mask: linear-gradient(45deg, #000 14%, transparent 17.5%, transparent 17.5%);
+  }
+  8% {
+    -webkit-mask: linear-gradient(45deg, #000 16%, transparent 20%, transparent 20%);
+            mask: linear-gradient(45deg, #000 16%, transparent 20%, transparent 20%);
+  }
+  9% {
+    -webkit-mask: linear-gradient(45deg, #000 18%, transparent 22.5%, transparent 22.5%);
+            mask: linear-gradient(45deg, #000 18%, transparent 22.5%, transparent 22.5%);
+  }
+  10% {
+    -webkit-mask: linear-gradient(45deg, #000 20%, transparent 25%, transparent 25%);
+            mask: linear-gradient(45deg, #000 20%, transparent 25%, transparent 25%);
+  }
+  11% {
+    -webkit-mask: linear-gradient(45deg, #000 22%, transparent 27.5%, transparent 27.5%);
+            mask: linear-gradient(45deg, #000 22%, transparent 27.5%, transparent 27.5%);
+  }
+  12% {
+    -webkit-mask: linear-gradient(45deg, #000 24%, transparent 30%, transparent 30%);
+            mask: linear-gradient(45deg, #000 24%, transparent 30%, transparent 30%);
+  }
+  13% {
+    -webkit-mask: linear-gradient(45deg, #000 26%, transparent 32.5%, transparent 32.5%);
+            mask: linear-gradient(45deg, #000 26%, transparent 32.5%, transparent 32.5%);
+  }
+  14% {
+    -webkit-mask: linear-gradient(45deg, #000 28%, transparent 35%, transparent 35%);
+            mask: linear-gradient(45deg, #000 28%, transparent 35%, transparent 35%);
+  }
+  15% {
+    -webkit-mask: linear-gradient(45deg, #000 30%, transparent 37.5%, transparent 37.5%);
+            mask: linear-gradient(45deg, #000 30%, transparent 37.5%, transparent 37.5%);
+  }
+  16% {
+    -webkit-mask: linear-gradient(45deg, #000 32%, transparent 40%, transparent 40%);
+            mask: linear-gradient(45deg, #000 32%, transparent 40%, transparent 40%);
+  }
+  17% {
+    -webkit-mask: linear-gradient(45deg, #000 34%, transparent 42.5%, transparent 42.5%);
+            mask: linear-gradient(45deg, #000 34%, transparent 42.5%, transparent 42.5%);
+  }
+  18% {
+    -webkit-mask: linear-gradient(45deg, #000 36%, transparent 45%, transparent 45%);
+            mask: linear-gradient(45deg, #000 36%, transparent 45%, transparent 45%);
+  }
+  19% {
+    -webkit-mask: linear-gradient(45deg, #000 38%, transparent 47.5%, transparent 47.5%);
+            mask: linear-gradient(45deg, #000 38%, transparent 47.5%, transparent 47.5%);
+  }
+  20% {
+    -webkit-mask: linear-gradient(45deg, #000 40%, transparent 50%, transparent 50%);
+            mask: linear-gradient(45deg, #000 40%, transparent 50%, transparent 50%);
+  }
+  21% {
+    -webkit-mask: linear-gradient(45deg, #000 42%, transparent 52.5%, transparent 52.5%);
+            mask: linear-gradient(45deg, #000 42%, transparent 52.5%, transparent 52.5%);
+  }
+  22% {
+    -webkit-mask: linear-gradient(45deg, #000 44%, transparent 55%, transparent 55%);
+            mask: linear-gradient(45deg, #000 44%, transparent 55%, transparent 55%);
+  }
+  23% {
+    -webkit-mask: linear-gradient(45deg, #000 46%, transparent 57.5%, transparent 57.5%);
+            mask: linear-gradient(45deg, #000 46%, transparent 57.5%, transparent 57.5%);
+  }
+  24% {
+    -webkit-mask: linear-gradient(45deg, #000 48%, transparent 60%, transparent 60%);
+            mask: linear-gradient(45deg, #000 48%, transparent 60%, transparent 60%);
+  }
+  25% {
+    -webkit-mask: linear-gradient(45deg, #000 50%, transparent 62.5%, transparent 62.5%);
+            mask: linear-gradient(45deg, #000 50%, transparent 62.5%, transparent 62.5%);
+  }
+  26% {
+    -webkit-mask: linear-gradient(45deg, #000 52%, transparent 65%, transparent 65%);
+            mask: linear-gradient(45deg, #000 52%, transparent 65%, transparent 65%);
+  }
+  27% {
+    -webkit-mask: linear-gradient(45deg, #000 54%, transparent 67.5%, transparent 67.5%);
+            mask: linear-gradient(45deg, #000 54%, transparent 67.5%, transparent 67.5%);
+  }
+  28% {
+    -webkit-mask: linear-gradient(45deg, #000 56%, transparent 70%, transparent 70%);
+            mask: linear-gradient(45deg, #000 56%, transparent 70%, transparent 70%);
+  }
+  29% {
+    -webkit-mask: linear-gradient(45deg, #000 58%, transparent 72.5%, transparent 72.5%);
+            mask: linear-gradient(45deg, #000 58%, transparent 72.5%, transparent 72.5%);
+  }
+  30% {
+    -webkit-mask: linear-gradient(45deg, #000 60%, transparent 75%, transparent 75%);
+            mask: linear-gradient(45deg, #000 60%, transparent 75%, transparent 75%);
+  }
+  31% {
+    -webkit-mask: linear-gradient(45deg, #000 62%, transparent 77.5%, transparent 77.5%);
+            mask: linear-gradient(45deg, #000 62%, transparent 77.5%, transparent 77.5%);
+  }
+  32% {
+    -webkit-mask: linear-gradient(45deg, #000 64%, transparent 80%, transparent 80%);
+            mask: linear-gradient(45deg, #000 64%, transparent 80%, transparent 80%);
+  }
+  33% {
+    -webkit-mask: linear-gradient(45deg, #000 66%, transparent 82.5%, transparent 82.5%);
+            mask: linear-gradient(45deg, #000 66%, transparent 82.5%, transparent 82.5%);
+  }
+  34% {
+    -webkit-mask: linear-gradient(45deg, #000 68%, transparent 85%, transparent 85%);
+            mask: linear-gradient(45deg, #000 68%, transparent 85%, transparent 85%);
+  }
+  35% {
+    -webkit-mask: linear-gradient(45deg, #000 70%, transparent 87.5%, transparent 87.5%);
+            mask: linear-gradient(45deg, #000 70%, transparent 87.5%, transparent 87.5%);
+  }
+  36% {
+    -webkit-mask: linear-gradient(45deg, #000 72%, transparent 90%, transparent 90%);
+            mask: linear-gradient(45deg, #000 72%, transparent 90%, transparent 90%);
+  }
+  37% {
+    -webkit-mask: linear-gradient(45deg, #000 74%, transparent 92.5%, transparent 92.5%);
+            mask: linear-gradient(45deg, #000 74%, transparent 92.5%, transparent 92.5%);
+  }
+  38% {
+    -webkit-mask: linear-gradient(45deg, #000 76%, transparent 95%, transparent 95%);
+            mask: linear-gradient(45deg, #000 76%, transparent 95%, transparent 95%);
+  }
+  39% {
+    -webkit-mask: linear-gradient(45deg, #000 78%, transparent 97.5%, transparent 97.5%);
+            mask: linear-gradient(45deg, #000 78%, transparent 97.5%, transparent 97.5%);
+  }
+  40% {
+    -webkit-mask: linear-gradient(45deg, #000 80%, transparent 100%, transparent 100%);
+            mask: linear-gradient(45deg, #000 80%, transparent 100%, transparent 100%);
+  }
+  41% {
+    -webkit-mask: linear-gradient(45deg, #000 82%, transparent 102.5%, transparent 102.5%);
+            mask: linear-gradient(45deg, #000 82%, transparent 102.5%, transparent 102.5%);
+  }
+  42% {
+    -webkit-mask: linear-gradient(45deg, #000 84%, transparent 105%, transparent 105%);
+            mask: linear-gradient(45deg, #000 84%, transparent 105%, transparent 105%);
+  }
+  43% {
+    -webkit-mask: linear-gradient(45deg, #000 86%, transparent 107.5%, transparent 107.5%);
+            mask: linear-gradient(45deg, #000 86%, transparent 107.5%, transparent 107.5%);
+  }
+  44% {
+    -webkit-mask: linear-gradient(45deg, #000 88%, transparent 110%, transparent 110%);
+            mask: linear-gradient(45deg, #000 88%, transparent 110%, transparent 110%);
+  }
+  45% {
+    -webkit-mask: linear-gradient(45deg, #000 90%, transparent 112.5%, transparent 112.5%);
+            mask: linear-gradient(45deg, #000 90%, transparent 112.5%, transparent 112.5%);
+  }
+  46% {
+    -webkit-mask: linear-gradient(45deg, #000 92%, transparent 115%, transparent 115%);
+            mask: linear-gradient(45deg, #000 92%, transparent 115%, transparent 115%);
+  }
+  47% {
+    -webkit-mask: linear-gradient(45deg, #000 94%, transparent 117.5%, transparent 117.5%);
+            mask: linear-gradient(45deg, #000 94%, transparent 117.5%, transparent 117.5%);
+  }
+  48% {
+    -webkit-mask: linear-gradient(45deg, #000 96%, transparent 120%, transparent 120%);
+            mask: linear-gradient(45deg, #000 96%, transparent 120%, transparent 120%);
+  }
+  49% {
+    -webkit-mask: linear-gradient(45deg, #000 98%, transparent 122.5%, transparent 122.5%);
+            mask: linear-gradient(45deg, #000 98%, transparent 122.5%, transparent 122.5%);
+  }
+  50% {
+    -webkit-mask: linear-gradient(45deg, #000 100%, transparent 125%, transparent 125%);
+            mask: linear-gradient(45deg, #000 100%, transparent 125%, transparent 125%);
+  }
+  100% {
+    -webkit-mask: linear-gradient(45deg, #000 ， #000 100%);
+            mask: linear-gradient(45deg, #000 ， #000 100%);
+  }
+}
+
+@keyframes maskRotate {
+  0% {
+    -webkit-mask: linear-gradient(45deg, #000 0%, transparent 0%, transparent 0%);
+            mask: linear-gradient(45deg, #000 0%, transparent 0%, transparent 0%);
+  }
+  1% {
+    -webkit-mask: linear-gradient(45deg, #000 2%, transparent 2.5%, transparent 2.5%);
+            mask: linear-gradient(45deg, #000 2%, transparent 2.5%, transparent 2.5%);
+  }
+  2% {
+    -webkit-mask: linear-gradient(45deg, #000 4%, transparent 5%, transparent 5%);
+            mask: linear-gradient(45deg, #000 4%, transparent 5%, transparent 5%);
+  }
+  3% {
+    -webkit-mask: linear-gradient(45deg, #000 6%, transparent 7.5%, transparent 7.5%);
+            mask: linear-gradient(45deg, #000 6%, transparent 7.5%, transparent 7.5%);
+  }
+  4% {
+    -webkit-mask: linear-gradient(45deg, #000 8%, transparent 10%, transparent 10%);
+            mask: linear-gradient(45deg, #000 8%, transparent 10%, transparent 10%);
+  }
+  5% {
+    -webkit-mask: linear-gradient(45deg, #000 10%, transparent 12.5%, transparent 12.5%);
+            mask: linear-gradient(45deg, #000 10%, transparent 12.5%, transparent 12.5%);
+  }
+  6% {
+    -webkit-mask: linear-gradient(45deg, #000 12%, transparent 15%, transparent 15%);
+            mask: linear-gradient(45deg, #000 12%, transparent 15%, transparent 15%);
+  }
+  7% {
+    -webkit-mask: linear-gradient(45deg, #000 14%, transparent 17.5%, transparent 17.5%);
+            mask: linear-gradient(45deg, #000 14%, transparent 17.5%, transparent 17.5%);
+  }
+  8% {
+    -webkit-mask: linear-gradient(45deg, #000 16%, transparent 20%, transparent 20%);
+            mask: linear-gradient(45deg, #000 16%, transparent 20%, transparent 20%);
+  }
+  9% {
+    -webkit-mask: linear-gradient(45deg, #000 18%, transparent 22.5%, transparent 22.5%);
+            mask: linear-gradient(45deg, #000 18%, transparent 22.5%, transparent 22.5%);
+  }
+  10% {
+    -webkit-mask: linear-gradient(45deg, #000 20%, transparent 25%, transparent 25%);
+            mask: linear-gradient(45deg, #000 20%, transparent 25%, transparent 25%);
+  }
+  11% {
+    -webkit-mask: linear-gradient(45deg, #000 22%, transparent 27.5%, transparent 27.5%);
+            mask: linear-gradient(45deg, #000 22%, transparent 27.5%, transparent 27.5%);
+  }
+  12% {
+    -webkit-mask: linear-gradient(45deg, #000 24%, transparent 30%, transparent 30%);
+            mask: linear-gradient(45deg, #000 24%, transparent 30%, transparent 30%);
+  }
+  13% {
+    -webkit-mask: linear-gradient(45deg, #000 26%, transparent 32.5%, transparent 32.5%);
+            mask: linear-gradient(45deg, #000 26%, transparent 32.5%, transparent 32.5%);
+  }
+  14% {
+    -webkit-mask: linear-gradient(45deg, #000 28%, transparent 35%, transparent 35%);
+            mask: linear-gradient(45deg, #000 28%, transparent 35%, transparent 35%);
+  }
+  15% {
+    -webkit-mask: linear-gradient(45deg, #000 30%, transparent 37.5%, transparent 37.5%);
+            mask: linear-gradient(45deg, #000 30%, transparent 37.5%, transparent 37.5%);
+  }
+  16% {
+    -webkit-mask: linear-gradient(45deg, #000 32%, transparent 40%, transparent 40%);
+            mask: linear-gradient(45deg, #000 32%, transparent 40%, transparent 40%);
+  }
+  17% {
+    -webkit-mask: linear-gradient(45deg, #000 34%, transparent 42.5%, transparent 42.5%);
+            mask: linear-gradient(45deg, #000 34%, transparent 42.5%, transparent 42.5%);
+  }
+  18% {
+    -webkit-mask: linear-gradient(45deg, #000 36%, transparent 45%, transparent 45%);
+            mask: linear-gradient(45deg, #000 36%, transparent 45%, transparent 45%);
+  }
+  19% {
+    -webkit-mask: linear-gradient(45deg, #000 38%, transparent 47.5%, transparent 47.5%);
+            mask: linear-gradient(45deg, #000 38%, transparent 47.5%, transparent 47.5%);
+  }
+  20% {
+    -webkit-mask: linear-gradient(45deg, #000 40%, transparent 50%, transparent 50%);
+            mask: linear-gradient(45deg, #000 40%, transparent 50%, transparent 50%);
+  }
+  21% {
+    -webkit-mask: linear-gradient(45deg, #000 42%, transparent 52.5%, transparent 52.5%);
+            mask: linear-gradient(45deg, #000 42%, transparent 52.5%, transparent 52.5%);
+  }
+  22% {
+    -webkit-mask: linear-gradient(45deg, #000 44%, transparent 55%, transparent 55%);
+            mask: linear-gradient(45deg, #000 44%, transparent 55%, transparent 55%);
+  }
+  23% {
+    -webkit-mask: linear-gradient(45deg, #000 46%, transparent 57.5%, transparent 57.5%);
+            mask: linear-gradient(45deg, #000 46%, transparent 57.5%, transparent 57.5%);
+  }
+  24% {
+    -webkit-mask: linear-gradient(45deg, #000 48%, transparent 60%, transparent 60%);
+            mask: linear-gradient(45deg, #000 48%, transparent 60%, transparent 60%);
+  }
+  25% {
+    -webkit-mask: linear-gradient(45deg, #000 50%, transparent 62.5%, transparent 62.5%);
+            mask: linear-gradient(45deg, #000 50%, transparent 62.5%, transparent 62.5%);
+  }
+  26% {
+    -webkit-mask: linear-gradient(45deg, #000 52%, transparent 65%, transparent 65%);
+            mask: linear-gradient(45deg, #000 52%, transparent 65%, transparent 65%);
+  }
+  27% {
+    -webkit-mask: linear-gradient(45deg, #000 54%, transparent 67.5%, transparent 67.5%);
+            mask: linear-gradient(45deg, #000 54%, transparent 67.5%, transparent 67.5%);
+  }
+  28% {
+    -webkit-mask: linear-gradient(45deg, #000 56%, transparent 70%, transparent 70%);
+            mask: linear-gradient(45deg, #000 56%, transparent 70%, transparent 70%);
+  }
+  29% {
+    -webkit-mask: linear-gradient(45deg, #000 58%, transparent 72.5%, transparent 72.5%);
+            mask: linear-gradient(45deg, #000 58%, transparent 72.5%, transparent 72.5%);
+  }
+  30% {
+    -webkit-mask: linear-gradient(45deg, #000 60%, transparent 75%, transparent 75%);
+            mask: linear-gradient(45deg, #000 60%, transparent 75%, transparent 75%);
+  }
+  31% {
+    -webkit-mask: linear-gradient(45deg, #000 62%, transparent 77.5%, transparent 77.5%);
+            mask: linear-gradient(45deg, #000 62%, transparent 77.5%, transparent 77.5%);
+  }
+  32% {
+    -webkit-mask: linear-gradient(45deg, #000 64%, transparent 80%, transparent 80%);
+            mask: linear-gradient(45deg, #000 64%, transparent 80%, transparent 80%);
+  }
+  33% {
+    -webkit-mask: linear-gradient(45deg, #000 66%, transparent 82.5%, transparent 82.5%);
+            mask: linear-gradient(45deg, #000 66%, transparent 82.5%, transparent 82.5%);
+  }
+  34% {
+    -webkit-mask: linear-gradient(45deg, #000 68%, transparent 85%, transparent 85%);
+            mask: linear-gradient(45deg, #000 68%, transparent 85%, transparent 85%);
+  }
+  35% {
+    -webkit-mask: linear-gradient(45deg, #000 70%, transparent 87.5%, transparent 87.5%);
+            mask: linear-gradient(45deg, #000 70%, transparent 87.5%, transparent 87.5%);
+  }
+  36% {
+    -webkit-mask: linear-gradient(45deg, #000 72%, transparent 90%, transparent 90%);
+            mask: linear-gradient(45deg, #000 72%, transparent 90%, transparent 90%);
+  }
+  37% {
+    -webkit-mask: linear-gradient(45deg, #000 74%, transparent 92.5%, transparent 92.5%);
+            mask: linear-gradient(45deg, #000 74%, transparent 92.5%, transparent 92.5%);
+  }
+  38% {
+    -webkit-mask: linear-gradient(45deg, #000 76%, transparent 95%, transparent 95%);
+            mask: linear-gradient(45deg, #000 76%, transparent 95%, transparent 95%);
+  }
+  39% {
+    -webkit-mask: linear-gradient(45deg, #000 78%, transparent 97.5%, transparent 97.5%);
+            mask: linear-gradient(45deg, #000 78%, transparent 97.5%, transparent 97.5%);
+  }
+  40% {
+    -webkit-mask: linear-gradient(45deg, #000 80%, transparent 100%, transparent 100%);
+            mask: linear-gradient(45deg, #000 80%, transparent 100%, transparent 100%);
+  }
+  41% {
+    -webkit-mask: linear-gradient(45deg, #000 82%, transparent 102.5%, transparent 102.5%);
+            mask: linear-gradient(45deg, #000 82%, transparent 102.5%, transparent 102.5%);
+  }
+  42% {
+    -webkit-mask: linear-gradient(45deg, #000 84%, transparent 105%, transparent 105%);
+            mask: linear-gradient(45deg, #000 84%, transparent 105%, transparent 105%);
+  }
+  43% {
+    -webkit-mask: linear-gradient(45deg, #000 86%, transparent 107.5%, transparent 107.5%);
+            mask: linear-gradient(45deg, #000 86%, transparent 107.5%, transparent 107.5%);
+  }
+  44% {
+    -webkit-mask: linear-gradient(45deg, #000 88%, transparent 110%, transparent 110%);
+            mask: linear-gradient(45deg, #000 88%, transparent 110%, transparent 110%);
+  }
+  45% {
+    -webkit-mask: linear-gradient(45deg, #000 90%, transparent 112.5%, transparent 112.5%);
+            mask: linear-gradient(45deg, #000 90%, transparent 112.5%, transparent 112.5%);
+  }
+  46% {
+    -webkit-mask: linear-gradient(45deg, #000 92%, transparent 115%, transparent 115%);
+            mask: linear-gradient(45deg, #000 92%, transparent 115%, transparent 115%);
+  }
+  47% {
+    -webkit-mask: linear-gradient(45deg, #000 94%, transparent 117.5%, transparent 117.5%);
+            mask: linear-gradient(45deg, #000 94%, transparent 117.5%, transparent 117.5%);
+  }
+  48% {
+    -webkit-mask: linear-gradient(45deg, #000 96%, transparent 120%, transparent 120%);
+            mask: linear-gradient(45deg, #000 96%, transparent 120%, transparent 120%);
+  }
+  49% {
+    -webkit-mask: linear-gradient(45deg, #000 98%, transparent 122.5%, transparent 122.5%);
+            mask: linear-gradient(45deg, #000 98%, transparent 122.5%, transparent 122.5%);
+  }
+  50% {
+    -webkit-mask: linear-gradient(45deg, #000 100%, transparent 125%, transparent 125%);
+            mask: linear-gradient(45deg, #000 100%, transparent 125%, transparent 125%);
+  }
+  100% {
+    -webkit-mask: linear-gradient(45deg, #000 ， #000 100%);
+            mask: linear-gradient(45deg, #000 ， #000 100%);
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,113 @@
+body {
+  background-color: paleturquoise;
+}
+
+div {
+  position: relative;
+  width: 200px;
+  height: 64px;
+  margin: 50px auto;
+  -webkit-box-shadow: inset 0 0 0 3px #ffffff;
+          box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+div::after,
+div::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid transparent;
+}
+
+.both:hover::before {
+  -webkit-transition: width .5s, height .5s, border-bottom-color 0s;
+  transition: width .5s, height .5s, border-bottom-color 0s;
+  -webkit-transition-delay: .5s, 0s, .5s;
+          transition-delay: .5s, 0s, .5s;
+  width: 200px;
+  height: 64px;
+  border-left: 3px solid pink;
+  border-bottom: 3px solid pink;
+}
+
+.both:hover::after {
+  -webkit-transition: width .5s, height .5s, border-right-color 0s;
+  transition: width .5s, height .5s, border-right-color 0s;
+  -webkit-transition-delay: 0s, 0.5s, .5s;
+          transition-delay: 0s, 0.5s, .5s;
+  width: 200px;
+  height: 64px;
+  border-top: 3px solid pink;
+  border-right: 3px solid pink;
+}
+
+.cicle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.cicle::before, .cicle::after {
+  border-radius: 50%;
+}
+
+.cicle:hover::before {
+  width: 120px;
+  height: 120px;
+  border-color: pink;
+  -webkit-transition: border-top-color .25s, border-right-color .25s, border-bottom-color .25s, border-left-color .25s;
+  transition: border-top-color .25s, border-right-color .25s, border-bottom-color .25s, border-left-color .25s;
+  -webkit-transition-delay: 0s, 0.25s, .5s, .75s;
+          transition-delay: 0s, 0.25s, .5s, .75s;
+}
+
+.cicle:hover::after {
+  width: 120px;
+  height: 120px;
+  border-top: 3px solid pink;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.rectangle::after {
+  top: unset;
+  left: unset;
+  right: 0;
+  bottom: 0;
+}
+
+.rectangle:hover {
+  color: pink;
+}
+
+.rectangle:hover::before {
+  width: 200px;
+  height: 64px;
+  border-left: 3px solid pink;
+  border-bottom: 3px solid pink;
+  -webkit-transition: width .25s, height .25s, border-bottom-color 0s;
+  transition: width .25s, height .25s, border-bottom-color 0s;
+  -webkit-transition-delay: .25s, 0s, .25s;
+          transition-delay: .25s, 0s, .25s;
+}
+
+.rectangle:hover::after {
+  width: 200px;
+  height: 64px;
+  border-top: 3px solid pink;
+  border-right: 3px solid pink;
+  -webkit-transition: width .25s, height .25s, border-top-color 0.25s;
+  transition: width .25s, height .25s, border-top-color 0.25s;
+  -webkit-transition-delay: .75s, 0.5s, .75s;
+          transition-delay: .75s, 0.5s, .75s;
+}
+/*# sourceMappingURL=index.css.map */

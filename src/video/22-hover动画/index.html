@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transition-delay的妙用</title>
+    <title>hover 边框动画</title>
 </head>
 <style>
     body {
@@ -13,11 +13,11 @@
     
     div {
         position: relative;
-        margin: 200px auto;
         width: 200px;
         height: 100px;
-        line-height: 100px;
+        margin: 200px auto;
         text-align: center;
+        line-height: 100px;
         overflow: hidden;
     }
     
@@ -25,37 +25,37 @@
         content: "Hover Me";
         position: absolute;
         top: 4px;
+        left: 4px;
         bottom: 4px;
         right: 4px;
-        left: 4px;
-        line-height: 92px;
         font-size: 24px;
-        background: #fff;
-        border: 2px solid palevioletred;
-        cursor: pointer;
+        background: #ffffff;
         color: palevioletred;
+        border: 2px solid palevioletred;
+        line-height: 92px;
+        cursor: pointer;
     }
     
     div::before {
         content: "";
         position: absolute;
-        top: 0px;
-        bottom: 0px;
-        right: 0px;
-        left: 0px;
-        /* background: palevioletred; */
-        background: yellowgreen;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        /* background-color: yellowgreen; */
+        background-color: palevioletred;
         transform: translate(-100%, -100%);
         transition: transform .3s;
     }
     
     div:hover::before {
-        transform: translate(0%, -0%);
+        transform: translate(0, 0);
     }
 </style>
 
 <body>
-    <div>Hover Me</div>
+    <div>Hover Me!</div>
 </body>
 
 </html>
